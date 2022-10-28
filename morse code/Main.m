@@ -1,3 +1,5 @@
+clear
+clc
 
 %stuff = morseCreation("...././.-../.-../---/",false)
 %pie(categorical(num2cell(stuff)))
