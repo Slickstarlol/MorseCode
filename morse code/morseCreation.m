@@ -8,6 +8,7 @@ function finalWord = morseCreation(text,encrypt)
     "I";"J";"K";"L";"M";"N";"O";"P";"Q";"R";"S";"T";"U";"V";"W";"X";"Y";"Z";"-"]; % Initializing letter code
     if encrypt % Condition to encrypt morse
         text = upper(char(text)); % Converts str to upper(char)
+        text(text == ' ') = '-';
         finalWord = replace(text,letter,code+"/"); % Converts letter to code + "/". Finalizes as str
     else
         text = char(text); % Converts str to chat
